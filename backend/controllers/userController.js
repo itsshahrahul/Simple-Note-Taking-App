@@ -1,4 +1,3 @@
-// controllers/userController.js
 import bcrypt from "bcrypt";
 import User from "../models/userModel.js";
 import createToken from "../utils.js";

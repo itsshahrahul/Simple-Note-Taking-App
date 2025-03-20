@@ -1,4 +1,3 @@
-// controllers/noteController.js
 import Note from "../models/noteModel.js";
 
 export const getNotes = async (req, res) => {
