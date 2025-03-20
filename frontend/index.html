@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Note Taking App</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Simple Note-Taking App</h1>
+    <button id="logoutBtn" class="logout">Logout</button>
+    <input type="text" id="searchInput" placeholder="Search notes..." style="margin: 10px 0; padding: 8px; width: 100%; box-sizing: border-box;" />
+    <form id="noteForm">
+      <input type="text" id="title" placeholder="Title" required />
+      <textarea id="content" placeholder="Content" required></textarea>
+      <button type="submit">Add Note</button>
+    </form>
+    <div id="notesContainer">
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

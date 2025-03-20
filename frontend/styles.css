@@ -1,0 +1,223 @@
+/* Global styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f6fa;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Container */
+  .container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: center;
+  }
+  
+  h1 {
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Logout Button */
+  .logout {
+    background-color: #e84118;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 25px;
+    cursor: pointer;
+    float: right;
+    margin-top: -40px;
+  }
+  
+  .logout:hover {
+    background-color: #c23616;
+  }
+  
+  /* Search Input */
+  #searchInput {
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    outline: none;
+  }
+  
+  #searchInput:focus {
+    border-color: #4a90e2;
+  }
+  
+  /* Note Form */
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 20px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    outline: none;
+  }
+  
+  textarea {
+    resize: vertical;
+    min-height: 80px;
+  }
+  
+  input:focus,
+  textarea:focus {
+    border-color: #4a90e2;
+  }
+  
+  button[type="submit"] {
+    padding: 12px;
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #357abd;
+  }
+  
+  /* Notes Container */
+  #notesContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  /* Individual Note */
+  .note {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    text-align: left;
+    position: relative;
+  }
+  
+  .note h3 {
+    margin: 0 0 10px 0;
+    color: #2c3e50;
+  }
+  
+  .note p {
+    margin: 0 0 10px 0;
+    color: #555;
+  }
+  
+  /* Edit & Delete Buttons */
+  .editBtn,
+  .deleteBtn {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-right: 8px;
+    font-size: 0.9rem;
+  }
+  
+  .editBtn {
+    background-color: #fbc531;
+    color: #fff;
+  }
+  
+  .editBtn:hover {
+    background-color: #e1b12c;
+  }
+  
+  .deleteBtn {
+    background-color: #e84118;
+    color: #fff;
+  }
+  
+  .deleteBtn:hover {
+    background-color: #c23616;
+  }
+  
+  /* Auth Forms */
+  .form-container {
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 30px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: center;
+  }
+  
+  .form-container h2 {
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .form-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .form-container input {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    outline: none;
+  }
+  
+  .form-container input:focus {
+    border-color: #4a90e2;
+  }
+  
+  .form-container button {
+    padding: 12px;
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .form-container button:hover {
+    background-color: #357abd;
+  }
+  
+  .form-container p {
+    margin-top: 15px;
+  }
+  
+  .form-container a {
+    color: #4a90e2;
+    text-decoration: none;
+  }
+  
+  .form-container a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive */
+  @media (max-width: 600px) {
+    .container, .form-container {
+      margin: 20px;
+      padding: 20px;
+    }
+  }
+  
