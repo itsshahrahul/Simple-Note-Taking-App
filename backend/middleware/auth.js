@@ -8,7 +8,7 @@ function checkAuth() {
         }
         const token = authorization.split(" ")[1];
         try {
-            const { _id } = jwt.verify(token, "mysecretkey");
+            const { _id } = jwt.verify(token, process.env.JWT_SECRET);
             req.user = { _id };
             next();
         } catch (err) {
